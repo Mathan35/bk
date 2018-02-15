@@ -1,3 +1,4 @@
+
 while True:
 	print("Enter '0' for exit.")
 	ch = input("Enter any character: ")
@@ -5,6 +6,6 @@ while True:
 		break
 	else:
 		if(ch>='a' and ch<='z'):
-			print(ch, "is an alphabet.\n")
+			 print(ch, "is an alphabet.\n")
 		else:
 			print(ch, "is not an alphabet.\n")
