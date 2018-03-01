@@ -1,13 +1,22 @@
- lower = int(input("Enter lower range: "))
-upper = int(input("Enter upper range: "))
-
-for num in range(lower,upper + 1):
-   sum = 0
-   temp = num
-   while temp > 0:
-       digit = temp % 10
-       sum += digit ** 3
-       temp //= 10
+ Number = int(input("\nPlease Enter the Number to Check for Armstrong: "))
  
-   if num == sum:
-       print(num)
+
+Sum = 0
+Times = 0
+           
+
+Temp = Number
+while Temp > 0:
+           Times = Times + 1
+           Temp = Temp // 10
+ 
+
+Temp = Number
+while Temp > 0:
+           Reminder = Temp % 10
+           Sum = Sum + (Reminder ** Times)
+           Temp //= 10
+if Number == Sum:
+           print("\n %d is Armstrong Number.\n" %Number)
+else:
+           print("\n %d is Not a Armstrong Number.\n" %Number)
