@@ -1,4 +1,4 @@
-def swap_string(sentence):
+ def swap_string(sentence):
     l = list(sentence)
     list_even = list()
     list_odd = list()
@@ -14,8 +14,8 @@ def swap_string(sentence):
     string_even = "".join(list_even)
     string_odd = " ".join(list_odd)
 
-    print(string_odd)
-    print(string_even)
+    print(string_odd,string_even)
+     
 
 
 swap_string('mathan')
